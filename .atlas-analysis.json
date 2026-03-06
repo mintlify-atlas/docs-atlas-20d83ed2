@@ -1,0 +1,190 @@
+{
+  "projectType": "saas",
+  "projectName": "IDURAR ERP CRM",
+  "projectDescription": "Free open-source ERP and CRM software for accounting, invoicing, and business management built on the MERN stack.",
+  "theme": "linden",
+  "primaryColor": "#1890ff",
+  "lightColor": "#40a9ff",
+  "darkColor": "#096dd9",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/invoice-management",
+              "features/quote-management",
+              "features/payment-management",
+              "features/customer-management",
+              "features/financial-management"
+            ]
+          },
+          {
+            "group": "User Guide",
+            "pages": [
+              "guides/creating-invoices",
+              "guides/managing-quotes",
+              "guides/processing-payments",
+              "guides/managing-customers",
+              "guides/dashboard-overview"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/environment-variables",
+              "configuration/database-setup",
+              "configuration/email-settings",
+              "configuration/payment-modes",
+              "configuration/tax-settings"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/production-setup",
+              "deployment/docker",
+              "deployment/security-best-practices"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api/authentication/login",
+              "api/authentication/logout",
+              "api/authentication/password-reset"
+            ]
+          },
+          {
+            "group": "Invoices",
+            "pages": [
+              "api/invoices/create",
+              "api/invoices/read",
+              "api/invoices/update",
+              "api/invoices/delete",
+              "api/invoices/list",
+              "api/invoices/send-email"
+            ]
+          },
+          {
+            "group": "Quotes",
+            "pages": [
+              "api/quotes/create",
+              "api/quotes/read",
+              "api/quotes/update",
+              "api/quotes/delete",
+              "api/quotes/list",
+              "api/quotes/convert-to-invoice"
+            ]
+          },
+          {
+            "group": "Payments",
+            "pages": [
+              "api/payments/create",
+              "api/payments/read",
+              "api/payments/update",
+              "api/payments/delete",
+              "api/payments/list"
+            ]
+          },
+          {
+            "group": "Clients",
+            "pages": [
+              "api/clients/create",
+              "api/clients/read",
+              "api/clients/update",
+              "api/clients/delete",
+              "api/clients/list"
+            ]
+          },
+          {
+            "group": "Settings",
+            "pages": [
+              "api/settings/read",
+              "api/settings/update",
+              "api/settings/list"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Architecture",
+            "pages": [
+              "development/architecture-overview",
+              "development/backend-structure",
+              "development/frontend-structure",
+              "development/database-schema"
+            ]
+          },
+          {
+            "group": "Contributing",
+            "pages": [
+              "development/contributing",
+              "development/code-style",
+              "development/testing",
+              "development/pull-requests"
+            ]
+          },
+          {
+            "group": "Customization",
+            "pages": [
+              "development/custom-modules",
+              "development/extending-models",
+              "development/custom-controllers",
+              "development/frontend-customization"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Invoice Management - Create, send, and track invoices with payment status",
+    "Quote Management - Generate quotes and convert them to invoices",
+    "Payment Processing - Record and manage customer payments with multiple payment modes",
+    "Customer Relationship Management - Manage customer contacts and communication history",
+    "Financial Management - Track expenses, revenue, and generate financial reports",
+    "Multi-currency Support - Handle transactions in different currencies",
+    "Email Integration - Send invoices and quotes via email",
+    "PDF Generation - Automatically generate PDF documents for invoices and quotes",
+    "Dashboard Analytics - Monitor sales performance and key business metrics",
+    "User Role Management - Control access with role-based permissions"
+  ],
+  "publicApiSurface": [
+    "POST /api/login - Authenticate admin user",
+    "POST /api/logout - End admin session",
+    "POST /api/invoice/create - Create new invoice",
+    "GET /api/invoice/read/:id - Get invoice details",
+    "PATCH /api/invoice/update/:id - Update invoice",
+    "DELETE /api/invoice/delete/:id - Delete invoice",
+    "GET /api/invoice/list - List invoices with pagination",
+    "POST /api/invoice/mail - Send invoice via email",
+    "POST /api/quote/create - Create new quote",
+    "GET /api/quote/convert/:id - Convert quote to invoice",
+    "POST /api/quote/mail - Send quote via email",
+    "POST /api/payment/create - Record payment",
+    "GET /api/payment/list - List payments",
+    "POST /api/client/create - Create customer record",
+    "GET /api/client/list - List all customers",
+    "GET /api/setting/readBySettingKey/:settingKey - Get setting value",
+    "PATCH /api/setting/updateBySettingKey/:settingKey - Update setting"
+  ]
+}
